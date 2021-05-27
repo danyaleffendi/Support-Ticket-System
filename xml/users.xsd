@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="users">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="user">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="first" type="xs:string" />
+                    <xs:element name="last" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="username" type="xs:string" />
+              <xs:element name="password" type="xs:string" />
+              <xs:element name="location">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="city" type="xs:string" />
+                    <xs:element name="province" type="xs:string" />
+                    <xs:element name="country" type="xs:string" />
+                    <xs:element name="zipCode" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+              <xs:attribute name="role" type="xs:string" use="required" />
+              <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+    <xs:simpleType name="types">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="client" />
+      <xs:enumeration value="supportteam" />
+      <xs:enumeration value="admin" />
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

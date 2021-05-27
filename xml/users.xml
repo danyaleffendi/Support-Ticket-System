@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="users.xsd"> 
+<!-- id corrected as per your valuable feedback. I didn't even think about that -->
+   <user role="Admin" id="11">
+      <name>
+         <first>Danyal</first>
+         <last>Effendi</last>
+      </name>
+      <username>danyal</username>
+      <password>21232f297a57a5a743894a0e4a801fc3</password>
+      <location>
+         <city>Milton</city>
+         <province>Ontario</province>
+         <country>Canada</country>
+         <zipCode>L9T8Z6</zipCode>
+      </location>
+   </user>
+   <user role="Support Team" id="12">
+      <name>
+         <first>Seb</first>
+         <last>Vettel</last>
+      </name>
+      <username>seb</username>
+      <password>1253208465b1efa876f982d8a9e73eef</password>
+      <location>
+         <city>Toronto</city>
+         <province>Ontario</province>
+         <country>Canada</country>
+         <zipCode>M5V3L9</zipCode>
+      </location>
+   </user>
+   <user role="Customer" id="13">
+      <name>
+         <first>Lance</first>
+         <last>Stroll</last>
+      </name>
+      <username>lance</username>
+      <password>91ec1f9324753048c0096d036a694f86</password>
+      <location>
+         <city>Montreal</city>
+         <province>Quebec</province>
+         <country>Canada</country>
+         <zipCode>H3C6A1</zipCode>
+      </location>
+   </user>
+      <user role="Customer" id="14">
+      <name>
+         <first>Jenny</first>
+         <last>Taylor</last>
+      </name>
+      <username>jenny</username>
+      <password>91ec1f9324753048c0096d036a694f86</password>
+      <location>
+         <city>Halifax</city>
+         <province>Nova Scotia</province>
+         <country>Canada</country>
+         <zipCode>B3H0A0</zipCode>
+      </location>
+   </user>
+</users>

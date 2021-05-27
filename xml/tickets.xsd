@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tickets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="ticket">
+          <xs:complexType>            
+            <xs:sequence>
+              <xs:element name="issueDate">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:dateTime">
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="status" type="xs:string" />
+              <xs:element name="subject" type="xs:string" />
+              <xs:element name="orderId" type="xs:string" />
+              <xs:element name="messages">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="message">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="userId" type="xs:positiveInteger" use="required" />
+                            <xs:attribute name="datetime" type="xs:dateTime" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+              <xs:attribute name="id" type="xs:positiveInteger" use="required" />
+              <xs:attribute name="userid" type="xs:positiveInteger" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+    <xs:simpleType name="status">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="resolved"></xs:enumeration>
+      <xs:enumeration value="in-process"></xs:enumeration>
+      <xs:enumeration value="new"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,69 @@
+#newticketform, .container{
+    width:50%;
+	background:#e9ecef;
+	margin:5% 0 0 25%;
+	border-radius : 7px;
+	padding : 10px;
+	margin-bottom: 30px;
+}
+
+form a{
+	color: #000000;
+	margin-left:2%;
+}
+
+#loginbtn, #cancelbtn, #createbtn, .extlink, #updtbtn{
+	background-color : #000000;
+	border : none;
+	border-radius : 6px;
+	color : #ffffff;
+	padding : 5px;
+}
+
+#updtbtn {
+	margin-left : 2%;
+}
+body button a{
+	color : #ffffff;
+}
+
+#liststicekt a, #listcticekt a{
+	color : #000000;
+}
+
+#loginform{
+	padding : 20px;
+}
+
+#headings{
+	font-weight:bold;
+	margin-bottom:2%;
+}
+
+.logout{
+	right: 0;
+	margin-right: 30px;
+	position: absolute;
+	
+}
+.loginuser{
+	margin-top:15px;
+}
+.role{
+	right: 0;
+	margin-right: 30px;
+	position: absolute;
+	margin-top: -40px;
+}
+.footer{
+	text-align: center;
+	background-color: #007bff;
+	padding: 20px;
+	clear: both;
+}
+
+span{
+	right: 0;
+	margin-right: 30px;
+	position: absolute;
+}
